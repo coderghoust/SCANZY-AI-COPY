@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "blog"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "content": {
+      "type": "blocks",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "metaTitle": {
+      "type": "string",
+      "required": true
+    },
+    "metaDescription": {
+      "type": "text",
+      "required": true
+    },
+    "metaImage": {
+      "type": "string",
+      "required": true
+    },
+    "canonicalURL": {
+      "type": "string",
+      "required": true
+    },
+    "keywords": {
+      "type": "text",
+      "required": true
+    },
+    "published": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "cloudinarBannerUrl": {
+      "type": "string",
+      "required": true
+    },
+    "ogTitle": {
+      "type": "text",
+      "required": true
+    },
+    "ogDescription": {
+      "type": "text",
+      "required": true
+    },
+    "twitterCardType": {
+      "type": "enumeration",
+      "enum": [
+        "summary",
+        "summary_large_image"
+      ]
+    }
+  }
+}
